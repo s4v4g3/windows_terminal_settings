@@ -33,17 +33,8 @@
         },
         "list":
         [
+            
             {
-                // Make changes here to the powershell.exe profile.
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "Windows PowerShell",
-                "commandline": "powershell.exe",
-                "hidden": false,
-                "background": "#000077",
-                "fontFace": "Consolas"
-            },
-            {
-                // Make changes here to the cmd.exe profile.
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "Command Prompt",
                 "commandline": "cmd.exe",
@@ -52,12 +43,68 @@
                 "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
                 "backgroundImageAlignment": "bottomRight",
                 "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity" : 0.5
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "startingDirectory": "c:\\git"
             },
             {
-                "guid": "{1caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "name": "Admin Command Prompt",
-                "commandline": "cmd.exe /s /c sudo . cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6102}",
+                "name": "Command Prompt - Utilities",
+                "commandline": "cmd.exe",
+                "hidden": false,
+                "fontFace": "Consolas",
+                "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "startingDirectory": "c:\\utilities"
+            },
+            {
+                "guid": "{0caa0dad-35bf-5f56-a8fe-afceeeaa6102}",
+                "name": "Command Prompt - Python 3.9.2",
+                "commandline": "cmd.exe /s /k T:\\python_3_9_2_x64\\setPath.bat",
+                "hidden": false,
+                "fontFace": "Consolas",
+                "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "startingDirectory": "c:\\git"
+            },
+            {
+                "guid": "{0caa0dab-35bf-5f57-a8fe-afceeeaa6102}",
+                "name": "Command Prompt - Python 3.9 + Java",
+                "commandline": "cmd.exe /s /k T:\\python_3_9_2_and_java11.bat",
+                "hidden": false,
+                "fontFace": "Consolas",
+                "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "startingDirectory": "c:\\git"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "background": "#000077",
+                "foreground": "#F7F7F7",
+                "fontFace": "Consolas",
+                "tabTitle": "PS",
+                "startingDirectory": "c:\\git"
+            },
+            {
+                "guid": "{8caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Admin Terminal",
+                "commandline": "sudo _ wt",
                 "hidden": false,
                 "fontFace": "Consolas",
                 "icon": "ms-appdata:///roaming/CMD_32px.png"
@@ -67,31 +114,8 @@
                 "hidden": false,
                 "name": "Mingw Bash",
                 "commandline": "c:/Program Files/Git/bin/bash.exe --cd=c:\\git",
-                "icon": "ms-appdata:///roaming/git-bash_32px.ico"
-            },
-            {
-                "guid": "{95eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-                "hidden": false,
-                "name": "NodeJS",
-                "commandline": "cmd.exe /s /k T:\\nodejs_12_16_3_x64_rel_00\\nodevars.bat",
-                "icon": "ms-appdata:///roaming/nodeJS.ico",
-                "startingDirectory": "c:\\git",
-                "backgroundImage": "ms-appdata:///roaming/nodejs-1.jpg",
-                "backgroundImageAlignment": "bottomRight",
-                "backgroundImageStretchMode": "none",
-                "backgroundImageOpacity" : 0.5
-            },
-            {
-                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-                "hidden": true,
-                "name": "Ubuntu-18.04",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": true,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "icon": "ms-appdata:///roaming/git-bash_32px.ico",
+                "tabTitle": "MINGW BASH"
             },
             {
                 "guid": "{b355b1f0-dc50-4ab6-9e45-11a75b4f83b6}",
@@ -105,9 +129,123 @@
                 "backgroundImageAlignment": "bottomRight",
                 "backgroundImageStretchMode": "none",
                 "useAcrylic": true,
-                "backgroundImageOpacity" : 0.1,
-                "icon": "ms-appdata:///roaming/ubuntu_32px.png"
+                "backgroundImageOpacity": 0.1,
+                "icon": "ms-appdata:///roaming/ubuntu_32px.png",
+                "tabTitle": "WSL Ubuntu-18"
             },
+            {
+                "guid": "{b355b1f0-dc50-4ab6-9e45-11a75b4f83c4}",
+                "hidden": false,
+                "name": "WSL2 Ubuntu-20.04 🐳",
+                "commandline": "wsl ~ -d Ubuntu-20.04",
+                "colorScheme": "UbuntuLegit",
+                "fontFace": "Cascadia Code",
+                "acrylicOpacity": 0.8,
+                "backgroundImage": "ms-appdata:///roaming/ubuntu-logo32.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "useAcrylic": true,
+                "backgroundImageOpacity": 0.1,
+                "icon": "ms-appdata:///roaming/ubuntu_32px.png",
+                "tabTitle": "WSL2 Ubuntu-20"
+            },
+            {
+                "guid": "{95eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "name": "NodeJS 12.16",
+                "commandline": "cmd.exe /s /k T:\\nodejs_12_16_3_x64_rel_00\\nodevars.bat",
+                "icon": "ms-appdata:///roaming/nodeJS.ico",
+                "startingDirectory": "c:\\git",
+                "backgroundImage": "ms-appdata:///roaming/nodejs-1.jpg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5
+            },
+            {
+                "guid": "{aaaa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Command Prompt - gruvbox",
+                "commandline": "cmd.exe",
+                "hidden": false,
+                "fontFace": "Iosevka",
+                "colorscheme": "gruvbox",
+                "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png"
+            },
+            {
+                "name": "Command Prompt - aptscience",
+                "commandline": "cmd.exe",
+                "hidden": false,
+                "parentProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bx}",
+                "tabTitle": "CMD",
+                "colorScheme": "aptscience",
+                "backgroundImage": "ms-appdata:///roaming/aptscience-background.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "cursorShape": "filledBox",
+                "cursorColor": "#A66900",
+                "experimental.retroTerminalEffect": false,
+                "acrylicOpacity": 0.8,
+                "backgroundImageOpacity": 0.8,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png"
+            },
+            {
+                "name": "Cyberlife CMD",
+                "commandline": "cmd.exe",
+                "hidden": false,
+                "tabTitle": "Cyberlife Industries",
+                "colorScheme" : "Cyberlife",
+                "backgroundImage": "ms-appdata:///roaming/Cyberlife_console_background.png",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "cursorShape": "filledBox",
+                "cursorColor" : "#6AE4F1",
+                "experimental.retroTerminalEffect": true,
+                "acrylicOpacity": 0.8,
+                "backgroundImageOpacity": 0.6
+            },
+            {
+                "guid": "{dead0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Cinnamon CMD",
+                "commandline": "cmd.exe",
+                "hidden": false,
+                "tabTitle": "CMD",
+                "fontFace": "CaskaydiaCove Nerd Font",
+                "backgroundImage": "ms-appdata:///roaming/middle.machine.jpg",
+                "backgroundImageOpacity": 0.75,
+                "colorScheme": "Build",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png"
+            },
+            {
+                "guid": "{e1aa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "SSH to LAB0014539",
+                "commandline": "ssh jasavage@lab0014539",
+                "hidden": false,
+                "fontFace": "Consolas",
+                "backgroundImage": "ms-appdata:///roaming/savages.jpeg",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageStretchMode": "none",
+                "backgroundImageOpacity": 0.5,
+                "foreground": "#d0d0FF",
+                "tabTitle": "CMD",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png"
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": true,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            
             {
                 "guid": "{78e390db-1bff-4533-9d7c-20f53d8bafa1}",
                 "hidden": true,
@@ -124,7 +262,14 @@
                 "useAcrylic": true,
                 "closeOnExit": false,
                 "padding": "0, 0, 0, 0",
-                "icon": "ms-appdata:///roaming/ubuntu_32px.png"
+                "icon": "ms-appdata:///roaming/ubuntu_32px.png",
+                "tabTitle": "WSL Ubuntu-18"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -175,6 +320,70 @@
                 "#61D6D6",
                 "#F2F2F2"
             ]
+        },
+        {
+            "name": "aptscience",
+            "background": "#6F3D00",
+            "black": "#A66900",
+            "blue": "#A66900",
+            "brightBlack": "#A66900",
+            "brightBlue": "#A66900",
+            "brightCyan": "#A66900",
+            "brightGreen": "#A66900",
+            "brightPurple": "#A66900",
+            "brightRed": "#A66900",
+            "brightWhite": "#A66900",
+            "brightYellow": "#A66900",
+            "cyan": "#A66900",
+            "foreground": "#A66900",
+            "green": "#A66900",
+            "purple": "#A66900",
+            "red": "#A66900",
+            "white": "#A66900",
+            "yellow": "#A66900"
+        },
+        {
+            "name": "Cyberlife",
+            "background": "#1a1a18",
+            "black": "#928C80",
+            "blue": "#78D6F2",
+            "brightBlack": "#A0A0A0",
+            "brightBlue": "#6DDDF1",
+            "brightCyan": "#90E6BF",
+            "brightGreen": "#B9E293",
+            "brightPurple": "#6369DB",
+            "brightRed": "#DF806E",
+            "brightWhite": "#FBFCFF",
+            "brightYellow": "#E2D07A",
+            "cyan": "#BCE5D2",
+            "foreground": "#6AE4F1",
+            "green": "#78E05E",
+            "purple": "#565BBC",
+            "red": "#DD563E",
+            "white": "#FFFFFF",
+            "yellow": "#F9FF4C"
+        },
+        {
+            "name": "Build",
+            "foreground": "#f1f1f1",
+            "background": "#492D7C",
+            "cursorColor": "#FFFFFF",
+            "black": "#0C0C0C",
+            "red": "#C50F1F",
+            "green": "#13A10E",
+            "yellow": "#C19C00",
+            "blue": "#0037DA",
+            "purple": "#881798",
+            "cyan": "#3A96DD",
+            "white": "#812727",
+            "brightBlack": "#b1b1b1",
+            "brightRed": "#E74856",
+            "brightGreen": "#16C60C",
+            "brightYellow": "#F9F1A5",
+            "brightBlue": "#3B78FF",
+            "brightPurple": "#B4009E",
+            "brightCyan": "#61D6D6",
+            "brightWhite": "#F2F2F2"
         }
     ],
 
